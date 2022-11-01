@@ -27,7 +27,7 @@ class Timer extends Component {
     }
 
     updateTime() {
-        if (this.state.time === 1) {
+        if (this.state.time == 1) {
             this.setState({time: "FERTIG"});
             clearInterval(this.interval);
             this.setState({render: true})
